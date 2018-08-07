@@ -5,14 +5,14 @@
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #C1B5AD;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
 
 #map{
-  height: 100vh;
-  width: 100vh;
+  height: 80vh;
+  width: 100%;
 }
 
 header, main {
@@ -22,12 +22,37 @@ header, main {
 
 header {
   justify-content: space-between;
+  align-items: center;
 }
 
+nav {
+  width: 100%;
+  justify-content: flex-end;
+}
 
 nav ul {
   display: flex;
   list-style-type: none;
-  width: 100%;
+  width: 50%;
   padding: 0;
+  justify-content: space-between;
+}
+#ui {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#controls {
+  /* display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center; */
+  background-color: lavender;
+  padding: 1rem;
+}
+
+#itin {
+  padding: 1rem;
+  background-color: lightgreen;
 }

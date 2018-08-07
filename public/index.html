@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Trip Planner</title>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="./style.css"></link>
   <script src='./bundle.js' defer></script>
 </head>
+
 <body>
   <header>
     <h1>TripPlanner</h1>
@@ -19,8 +21,53 @@
   </header>
   <main>
     <div id='map'></div>
-    <div id='controls'></div>
-    <div id='itin'></div>
+    <div id='ui'>
+      <div id='controls'>
+        <label>
+          <h2>Hotels</h2>
+        <select name='hotels'>
+          <option>A</option>
+          <option>A</option>
+          <option>A</option>
+        </select>
+        <button>X</button>
+      </label>
+      <label>
+          <h2>Restaurants</h2>
+        <select name='restaurants'>
+          <option>A</option>
+          <option>A</option>
+          <option>A</option>
+        </select>
+        <button>X</button>
+      </label>
+      <label>
+          <h2>Things To Do</h2>
+        <select name='activities'>
+          <option>A</option>
+          <option>A</option>
+          <option>A</option>
+        </select>
+        <button>X</button>
+      </label>
+      </div>
+      <div id='itin'>
+        <h2>Itinerary</h2>
+        <h3>My Hotel</h3>
+        <ul>
+          <li>A <button>X</button></li>
+        </ul>
+        <h3>My Restaurants</h3>
+        <ul>
+          <li>A <button>X</button></li>
+        </ul>
+        <h3>My Activities</h3>
+        <ul>
+          <li>A <button>X</button></li>
+        </ul>
+      </div>
+    </div>
   </main>
 </body>
+
 </html>
